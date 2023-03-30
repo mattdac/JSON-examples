@@ -1,0 +1,1016 @@
+[
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "${json-unit.regex}^(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2}(?:\\.\\d*)?)((-(\\d{2}):(\\d{2})|Z)?)$",
+          "elencoCf": [
+            {
+              "cf": "PPPPLT80A01H501V"
+            }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$date.iso\",\"identificativoRichiesta\":\"AAA34DFV7L0P0\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "${json-unit.regex}^(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2}(?:\\.\\d*)?)((-(\\d{2}):(\\d{2})|Z)?)$",
+          "elencoCf": [
+            {
+              "cf": "TSTGNN80A01F839X"
+            }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$date.iso\",\"identificativoRichiesta\":\"AAA44MZD8M0T0\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "${json-unit.regex}^(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2}(?:\\.\\d*)?)((-(\\d{2}):(\\d{2})|Z)?)$",
+          "elencoCf": [
+            {
+              "cf": "CTNMCP34B16H501T"
+            }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$date.iso\",\"identificativoRichiesta\":\"AAA82CTD8K2F3\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "${json-unit.regex}^(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2}(?:\\.\\d*)?)((-(\\d{2}):(\\d{2})|Z)?)$",
+          "elencoCf": [
+            {
+              "cf": "RCCRCC80A01H501B"
+            }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 401,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "httpCode": "401",
+          "httpMessage": "Unauthorized",
+          "moreInformation": "Invalid client id or secret."
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "${json-unit.regex}^(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2}(?:\\.\\d*)?)((-(\\d{2}):(\\d{2})|Z)?)$",
+          "elencoCf": [
+            {
+              "cf": "LDALDA80A01H501O"
+            }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":404,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"404\",\"error\":\"NotFound\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "${json-unit.regex}^(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2}(?:\\.\\d*)?)((-(\\d{2}):(\\d{2})|Z)?)$",
+          "elencoCf": [
+            {
+              "cf": "CIACIA80A01H501X"
+            }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":500,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"500\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "${json-unit.regex}^(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2}(?:\\.\\d*)?)((-(\\d{2}):(\\d{2})|Z)?)$",
+          "elencoCf": [
+            {
+              "cf": "DNIDNI80A01H501G"
+            }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":503,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"503\",\"error\":\"ServiceUnavailable\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "JSON_SCHEMA",
+        "jsonSchema": {
+          "$schema": "https://json-schema.org/draft-04/schema#",
+          "title": "dataOraRichiesta",
+          "type": "object",
+          "properties": {
+            "dataOraRichiesta": {
+              "type": "string"
+            },
+            "elencoCf": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "cf": {
+                    "type": "string"
+                  }
+                }
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            }
+          }
+        }
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$date.iso\",\"identificativoRichiesta\": \"#foreach($cf in $json.parse($!request.body).elencoCf)$cf.cf#if($foreach.hasNext)-#end#end\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA34DFV7L0P0",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraDownload\":\"$date.iso\",\"identificativoRichiesta\":\"AAA34DFV7L0P0\",\"elencoPec\":[{\"cf\":\"PPPPLT80A01H501V\",\"pecImpresa\":\"esempio@pec.it\",\"pecProfessionistas\":[{\"pecProfessionista\":\"esempio1@pec.it\"},{\"pecProfessionista\":\"esempio2@pec.it\"}]}]}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA44MZD8M0T0",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraDownload\":\"$date.iso\",\"identificativoRichiesta\":\"AAA44MZD8M0T0\",\"elencoPec\":[{\"cf\":\"TSTGNN80A01F839X\",\"pecImpresa\":\"\",\"pecProfessionistas\":[]}]}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA82CTD8K2F3",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraDownload\":\"$date.iso\",\"identificativoRichiesta\":\"AAA82CTD8K2F3\",\"elencoPec\":[{\"cf\":\"CTNMCP34B16H501T\",\"pecImpresa\":\"GRBGPP87L04L741X@pnpagopa.postecert.local\",\"pecProfessionistas\":[]}]}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA34DFV7L0P1",
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 401,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "httpCode": "401",
+          "httpMessage": "Unauthorized",
+          "moreInformation": "Invalid client id or secret."
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA34DFV7L0P2",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":404,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"404\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA34DFV7L0P3",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":500,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"500\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA34DFV7L0P4",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":503,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"503\",\"error\":\"Service unavailable\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/{idRichiesta}",
+      "pathParameters": {
+        "idRichiesta": [
+          "^([A-L]{1}[A-Z]{5}[0-9LMNPQRSTUV]{2}[A-Z]{1}[0-9LMNPQRSTUV]{2}[A-Z]{1}[0-9LMNPQRSTUV]{3}[A-Z]{1})|([0-9]{10}[0-4]{1})$"
+        ]
+      },
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraDownload\":\"$date.iso\",\"identificativoRichiesta\":\"$!request.pathParameters['idRichiesta'][0]\",\"elencoPec\":[{\"cf\":\"$!request.pathParameters['idRichiesta'][0]\",\"pecImpresa\":\"presente@pec.it\",\"pecProfessionistas\":[{\"pecProfessionista\":\"presente@pec.it\"},{\"pecProfessionista\":\"presente2@pec.it\"}]}]}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/{idRichiesta}",
+      "pathParameters": {
+        "idRichiesta": [
+          "^([M-Z]{1}[A-Z]{5}[0-9LMNPQRSTUV]{2}[A-Z]{1}[0-9LMNPQRSTUV]{2}[A-Z]{1}[0-9LMNPQRSTUV]{3}[A-Z]{1})|([0-9]{10}[5-9]{1})$"
+        ]
+      },
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraDownload\":\"$date.iso\",\"identificativoRichiesta\":\"$!request.pathParameters['idRichiesta'][0]\",\"elencoPec\":[{\"cf\":\"$!request.pathParameters['idRichiesta'][0]\",\"pecImpresa\":\"\",\"pecProfessionistas\":[]}]}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/.*",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"Bad Request\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/PPPPLT80A01H501V",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$date.iso\",\"cf\":\"PPPPLT80A01H501V\",\"indirizzoLocalizzazione\":{\"comune\":\"Roma\",\"provincia\":\"RM\",\"toponimo\":\"Roma\",\"via\":\"ViadelCorso\",\"nCivico\":\"100\",\"cap\":\"00100\"}}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/01501320442",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$date.iso\",\"cf\":\"01501320442\",\"indirizzoLocalizzazione\":{\"comune\":\"Roma\",\"provincia\":\"RM\",\"toponimo\":\"Roma\",\"via\":\"Via del Corso\",\"nCivico\":\"100\",\"cap\":\"00100\"}}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/01113570442",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$date.iso\",\"cf\":\"01113570442\",\"indirizzoLocalizzazione\":{\"comune\":\"Roma\",\"provincia\":\"RM\",\"toponimo\":\"Roma\",\"via\":\"Via del Campo\",\"nCivico\":\"101\",\"cap\":\"00101\"}}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/RCCRCC80A01H501B",
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 401,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "httpCode": "401",
+          "httpMessage": "Unauthorized",
+          "moreInformation": "Invalid client id or secret."
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/CIACIA80A01H501X",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":500,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"500\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/DNIDNI80A01H501G",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":503,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"503\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/{taxId}",
+      "pathParameters": {
+        "taxId": [
+          "([A-Z]{6}[0-9LMNPQRSTUV]{2}[A-Z]{1}[0-9LMNPQRSTUV]{2}[A-Z]{1}[0-9LMNPQRSTUV]{3}[A-Z]{1})|([0-9]{11})"
+        ]
+      },
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200, \"body\":{\"code\": \"WSPA_ERR_02\", \"appName\": \"wspa-pedf\", \"description\": \"List Pec not found.\", \"timestamp\": \"$date.iso\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/.*",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/PPPPLT80A01H501V",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "cfImpresa": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$!date.iso\",\"cfPersona\":\"PPPPLT80A01H501V\",\"cfImpresa\":\"abc123\",\"esitoVerifica\":\"OK\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/NNAMNA80A01H501C",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "cfImpresa": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$!date.iso\",\"cfPersona\":\"NNAMNA80A01H501C\",\"cfImpresa\":\"abc123\",\"esitoVerifica\":\"KO\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/RCCRCC80A01H501B",
+      "queryStringParameters": {
+        "cfImpresa": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 401,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "httpCode": "401",
+          "httpMessage": "Unauthorized",
+          "moreInformation": "Invalid client id or secret."
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/LDALDA80A01H501O",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "cfImpresa": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":404,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"404\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/CIACIA80A01H501X",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "cfImpresa": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":500,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"500\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/DNIDNI80A01H501G",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "cfImpresa": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":503,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"503\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/{taxId}",
+      "pathParameters": {
+        "taxId": [
+          "^[A-Za-z]{6}[0-9]{2}[A-Za-z]{1}[0-9]{2}[A-Za-z]{1}[0-9]{3}[A-Za-z]{1}$"
+        ]
+      },
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "cfImpresa": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200, \"body\":{\"code\": \"WSPA_ERR_04\", \"appName\": \"wspa-lrpf\", \"description\": \"Legale Rappresentante not found.\", \"timestamp\": \"$date.iso\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/.*",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "cfImpresa": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/authentication",
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "REGEX",
+        "regex": "^[\\w-]+\\.[\\w-]+\\.[\\w-]+$"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+      "headers": {
+        "Content-Type": [
+          "text/plain;charset=UTF-8"
+        ]
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/authentication",
+      "queryStringParameters": {
+        "client_id": [
+          {
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"NotFound\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  }
+
+]
